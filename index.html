@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flash Serviços Elétricos</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: rgb(202, 0, 0);
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .header h1 {
+      color: rgb(255, 255, 255);
+      margin: 0;
+      animation: piscar 1.5s infinite;
+    }
+
+    @keyframes piscar {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .imagem {
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
+
+    .imagem img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .texto {
+      flex: 2 1 400px;
+      line-height: 1.6;
+    }
+
+    .texto h3 {
+      color: aliceblue;
+      margin-top: 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: azure;
+      margin-top: 50px;
+    }
+
+    .contatos {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .contatos a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: lightblue;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .contatos a:hover {
+      color: #00ffea;
+    }
+
+    .botao-orcamento {
+      background-color: green;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .botao-orcamento:hover {
+      background-color: #059c05;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: gray;
+      border-top: 1px solid #333;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .texto {
+        text-align: justify;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Flash Serviços Elétricos</h1>
+  </header>
+
+  <main class="container">
+    <div class="imagem">
+      <img src="img/img.jpeg" alt="Imagem da empresa" />
+    </div>
+    <div class="texto">
+      <h3>
+        A Flash Serviços Elétricos é uma empresa especializada em soluções elétricas residenciais, comerciais e industriais, oferecendo atendimento de qualidade, segurança e eficiência.<br><br>
+        Com uma equipe altamente qualificada e em constante atualização, a Flash se destaca no mercado pelo compromisso com prazos, normas técnicas e a satisfação total do cliente.<br><br>
+        Seja para instalações, manutenções, reformas ou projetos elétricos completos, a Flash atua com responsabilidade e tecnologia, sempre buscando as melhores soluções para cada necessidade.<br><br>
+        <strong>Serviços oferecidos:</strong><br>
+        • Instalações elétricas residenciais, comerciais e industriais<br>
+        • Manutenção preventiva e corretiva<br>
+        • Troca de fiação e quadros de energia<br>
+        • Instalação de iluminação LED e automação<br>
+        • Projetos com emissão de ART<br>
+        • Suporte emergencial 24h<br><br>
+        Com a Flash, sua energia está em boas mãos.
+      </h3>
+    </div>
+  </main>
+
+  <section>
+    <h2>Contatos</h2>
+    <div class="contatos">
+      <a href="https://wa.me/qr/S2EWZYHG5T3MJ1" target="_blank" target="_blank">📱 WhatsApp</a>
+      <a href="tel:+5551998037031" target="_blank">📞 (55) 51 9803-7031</a>
+      <a href="https://www.facebook.com/fernandoerenataflash?locale=pt_BR" target="_blank">✉️ facebook.com</a><br>
+      <a href="https://wa.me/qr/S2EWZYHG5T3MJ1" class="botao-orcamento" target="_blank">Solicitar Orçamento</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Flash Serviços Elétricos. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
